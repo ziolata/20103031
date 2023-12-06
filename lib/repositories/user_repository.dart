@@ -17,7 +17,7 @@ class UserRepository {
     var response = await ApiService().updateProfile();
     if (response != null) {
       kq = true;
-      //Profile().student = Student.fromStudent(student);
+      // Profile().student = Student.fromStudent(student);
     }
     return kq;
   }

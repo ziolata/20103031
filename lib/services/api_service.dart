@@ -117,7 +117,7 @@ class ApiService {
   Future<Response?> getUserInfo() async {
     Map<String, String> headers = {
       'Content-Type': "application/json; charset=UTF-8",
-      'Authorization': "Bearer " + Profile().token,
+      'Authorization': 'Bearer ' + Profile().token,
       'Accept': 'application/json'
     };
     String apiUrl = "https://chocaycanh.club/api/me";
