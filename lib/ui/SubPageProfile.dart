@@ -180,7 +180,7 @@ class SubPageProfile extends StatelessWidget {
       height: size.height * 0.20,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: AppConstant.appbarcolor,
+        color: Colors.brown,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(60),
           bottomRight: Radius.circular(60),

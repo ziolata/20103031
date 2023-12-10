@@ -152,7 +152,7 @@ class _CustomInputDropDownState extends State<CustomInputDropDown> {
                   });
                 },
                 child: Text(
-                  widget.valueName == "" ? "Không có" : widget.valueName,
+                  outputName == "" ? "Không có" : outputName,
                   style: AppConstant.textbodyfocus,
                 ),
               )
@@ -162,7 +162,7 @@ class _CustomInputDropDownState extends State<CustomInputDropDown> {
                     color: Colors.grey[200]),
                 width: widget.width,
                 child: DropdownButton(
-                  value: widget.valueId,
+                  value: outputId,
                   items: widget.list
                       .map((e) => DropdownMenuItem(
                             value: e.id,
@@ -382,11 +382,6 @@ class AppLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    // return Icon(
-    //   Icons.account_tree,
-    //   size: 100,
-    //   color: Colors.deepPurple[300],
-    // );
     return Column(
       children: [
         ClipRRect(

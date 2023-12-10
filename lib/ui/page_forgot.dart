@@ -47,11 +47,11 @@ class PageForgot extends StatelessWidget {
                                   context, PageLogin.routename);
                             },
                             child: Text(
-                              "Bam vao day ",
+                              "Bấm vào đây ",
                               style: AppConstant.textlink,
                             ),
                           ),
-                          Text("de dang nhap")
+                          Text("Để đăng nhập")
                         ],
                       ),
                     ],
@@ -65,15 +65,13 @@ class PageForgot extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Image(
-                            image: AssetImage(
-                                'assets/images/a49cc95673f4ebf3a4263ab933f51c22_5393919961047654631.gif'),
+                            image: AssetImage('assets/images/fogort.png'),
                             width: 200,
                           ),
                           SizedBox(
                             height: 40,
                           ),
-                          const Text(
-                              "Dien Email vao de xac thuc qua trinh Lay lai mat khau!"),
+                          const Text("Điền email đã đăng ký !"),
                           const SizedBox(
                             height: 10,
                           ),
@@ -94,7 +92,7 @@ class PageForgot extends StatelessWidget {
                               final email = _emailController.text.trim();
                               viewmodel.forgotPassword(email);
                             },
-                            child: CustomButton(textButton: "Gui Yeu Cau"),
+                            child: CustomButton(textButton: "Gửi yêu cầu "),
                           ),
                           const SizedBox(
                             height: 10,
@@ -103,7 +101,7 @@ class PageForgot extends StatelessWidget {
                             onTap: () => Navigator.of(context)
                                 .popAndPushNamed(PageLogin.routename),
                             child: Text(
-                              "<< Dang Nhap ",
+                              "Đăng nhập ",
                               style: AppConstant.textlink,
                             ),
                           )

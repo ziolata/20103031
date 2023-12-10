@@ -27,7 +27,7 @@ class PageLogin extends StatelessWidget {
       );
     }
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Color.fromARGB(156, 204, 196, 196),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -50,8 +50,8 @@ class PageLogin extends StatelessWidget {
                         ),
                       ),
                       const Text(
-                        "",
-                        style: TextStyle(fontSize: 25),
+                        "Mời điền thông tin ",
+                        style: TextStyle(fontSize: 20),
                       ),
                       const SizedBox(
                         height: 30,
@@ -77,7 +77,7 @@ class PageLogin extends StatelessWidget {
                               viewmodel.errorMessage,
                               style: const TextStyle(color: Colors.red),
                             )
-                          : const Text(" "),
+                          : const Text(""),
                       const SizedBox(height: 10),
                       GestureDetector(
                         onTap: () {

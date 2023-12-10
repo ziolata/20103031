@@ -61,12 +61,12 @@ class PageMain extends StatelessWidget {
     menuBar.initialize(menuTitles);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(255, 187, 183, 195),
         leading: GestureDetector(
           onTap: () => viewmodel.toggleMenu(),
           child: Icon(
             Icons.menu,
-            color: Colors.white,
+            color: Color.fromARGB(255, 216, 75, 75),
           ),
         ),
       ),
@@ -76,7 +76,7 @@ class PageMain extends StatelessWidget {
           Consumer<MenuBarViewModel>(
             builder: (context, menuBarModel, child) {
               return Container(
-                color: Colors.deepPurple[300],
+                color: const Color.fromARGB(255, 117, 135, 205),
                 child: Center(
                   child: body,
                 ),
