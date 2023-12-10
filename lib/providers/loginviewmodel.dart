@@ -29,4 +29,10 @@ class LoginViewModel with ChangeNotifier {
       notifyListeners();
     } catch (e) {}
   }
+
+  void Logout() async {
+    if (status == 3) {
+      status = 0;
+    }
+  }
 }

@@ -43,14 +43,14 @@ class PageLogin extends StatelessWidget {
                         height: 30,
                       ),
                       const Text(
-                        "Hello",
+                        "Đăng Nhập",
                         style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       const Text(
-                        "I miss you!",
+                        "",
                         style: TextStyle(fontSize: 25),
                       ),
                       const SizedBox(
@@ -62,7 +62,7 @@ class PageLogin extends StatelessWidget {
                         obscureText: false,
                       ),
                       const SizedBox(
-                        height: 0,
+                        height: 10,
                       ),
                       CustomTextField(
                         hintText: "password",
@@ -95,12 +95,12 @@ class PageLogin extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text("Don't have Account?"),
+                          const Text("Bạn không có tài khoản?"),
                           GestureDetector(
                             onTap: () => Navigator.of(context)
                                 .popAndPushNamed(PageRegister.routename),
                             child: Text(
-                              "Register",
+                              " Đăng ký",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.deepPurple[300]),
@@ -115,7 +115,7 @@ class PageLogin extends StatelessWidget {
                         onTap: () => Navigator.of(context)
                             .popAndPushNamed(PageForgot.routename),
                         child: Text(
-                          ">> forgot password <<",
+                          "Quên mật khẩu ?",
                           style: AppConstant.textlink,
                         ),
                       )

@@ -4,6 +4,7 @@ import 'package:connection/ui/SubPageDsLop.dart';
 import 'package:connection/ui/SubPageProfile.dart';
 import 'package:connection/ui/SubPageTimKiem.dart';
 import 'package:connection/ui/SubPageTinTuc.dart';
+import 'package:connection/ui/SubpageDangXuat.dart';
 import 'package:connection/ui/SubpageDiemDanh.dart';
 import 'package:connection/ui/page_login.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,8 @@ class PageMain extends StatelessWidget {
     "Điểm Danh",
     "Tìm Kiếm",
     "Danh Sách Lớp",
-    "Danh Sách Học Phần"
+    "Danh Sách Học Phần",
+    "Đăng xuất"
   ];
 
   final menuBar = MenuItemlist();
@@ -53,6 +55,8 @@ class PageMain extends StatelessWidget {
       body = SubPageDsLop();
     } else if (viewmodel.activemenu == SubPageDsHP.idpage) {
       body = SubPageDsHP();
+    } else if (viewmodel.activemenu == SubPageDangXuat.idpage) {
+      body = SubPageDangXuat();
     }
     menuBar.initialize(menuTitles);
     return Scaffold(

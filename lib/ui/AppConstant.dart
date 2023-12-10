@@ -1,6 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
 
 class AppConstant {
   static Color appbarcolor = Colors.deepPurple;
@@ -29,9 +30,30 @@ class AppConstant {
     color: Colors.deepPurple[300],
     fontSize: 16,
   );
-
+  static TextStyle textbodyWhite = TextStyle(
+    color: Colors.white,
+    fontSize: 16,
+  );
+  static TextStyle textbodyWhiteBold = TextStyle(
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+    fontSize: 16,
+  );
   static TextStyle textbodyfocus = TextStyle(
     color: Colors.deepPurple,
     fontSize: 20,
   );
+  static TextStyle textbodyfocusWhite = TextStyle(
+    color: Colors.white,
+    fontSize: 20,
+  );
+  static bool isDate(String str) {
+    try {
+      var inputFormat = DateFormat('dd/MM/yyyy');
+      var date1 = inputFormat.parseStrict(str);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
 }
