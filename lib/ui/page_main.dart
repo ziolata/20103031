@@ -61,7 +61,7 @@ class PageMain extends StatelessWidget {
     menuBar.initialize(menuTitles);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 187, 183, 195),
+        backgroundColor: Color.fromARGB(255, 175, 196, 182),
         leading: GestureDetector(
           onTap: () => viewmodel.toggleMenu(),
           child: Icon(
